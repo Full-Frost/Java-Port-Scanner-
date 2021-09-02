@@ -27,10 +27,10 @@ public class portscan {
                 System.out.println("port: " + in.readLine());
             }
         }catch (UnknownHostException e){
-            System.err.println("Host is weird" + hostname);
+            System.err.println("Host is not found" + hostname);
             System.exit(1);
         }catch (IOException e){
-            System.err.println("Couldn't get I/O for the connection to " + hostname);
+            System.err.println("I/O Operation has failed on " + hostname);
             System.exit(1);
         }
     }
